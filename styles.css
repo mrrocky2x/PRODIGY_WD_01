@@ -1,0 +1,62 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+nav#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #0b0606;
+    color: rgb(123, 15, 231);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+nav#navbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav#navbar ul li a:hover {
+    background-color: #555;
+    color: #2a8edb;
+}
+
+/* Section Styling */
+.content {
+    padding-top: 60px; /* Make sure content does not hide under fixed navbar */
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+    border: 1px solid #4c0bce;
+}
+
+section h1 {
+    margin-bottom: 0.5em;
+}
+
+/* Navbar Background Change on Scroll */
+.scrolled {
+    background-color: #cf2525 !important;
+}
